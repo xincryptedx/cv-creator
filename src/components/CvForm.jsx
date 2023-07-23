@@ -1,7 +1,7 @@
 function CvForm() {
   return (
     <>
-      <div></div>
+      <form></form>
     </>
   );
 }
