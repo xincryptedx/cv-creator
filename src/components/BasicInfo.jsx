@@ -1,8 +1,10 @@
 function BasicInfo() {
   return (
     <section>
-      <label htmlFor=""></label>
-      <input type="text" />
+      <label htmlFor="firstName">First:</label>
+      <input id="firstName" type="text" />
+      <label htmlFor="lastName">Last:</label>
+      <input id="lastName" type="text" />
     </section>
   );
 }
