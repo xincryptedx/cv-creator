@@ -1,7 +1,9 @@
+import CvForm from "./components/CvForm";
+
 function App() {
   return (
     <>
-      <div>Hello World!</div>
+      <CvForm />
     </>
   );
 }
