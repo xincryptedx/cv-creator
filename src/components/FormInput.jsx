@@ -1,8 +1,19 @@
-function FormInput({ labelText, labelFor, inputValue, inputType = "text" }) {
+function FormInput({
+  labelText,
+  labelFor,
+  inputValue,
+  handleChange,
+  inputType = "text",
+}) {
   return (
     <>
       <label htmlFor={labelFor}>{labelText}</label>
-      <input id={labelFor} value={inputValue} type={inputType} />
+      <input
+        onChange={handleChange}
+        id={labelFor}
+        value={inputValue}
+        type={inputType}
+      />
     </>
   );
 }
