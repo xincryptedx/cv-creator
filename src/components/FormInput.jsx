@@ -1,8 +1,8 @@
-function FormInput({ labelText, labelFor, inputType = "text" }) {
+function FormInput({ labelText, labelFor, inputValue, inputType = "text" }) {
   return (
     <>
       <label htmlFor={labelFor}>{labelText}</label>
-      <input type={inputType} />
+      <input value={inputValue} type={inputType} />
     </>
   );
 }
