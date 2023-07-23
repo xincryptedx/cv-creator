@@ -1,7 +1,13 @@
+import FormButton from "./FormButton";
+
 function CvForm() {
   return (
     <>
-      <form></form>
+      <form>
+        <FormButton text="Create CV"></FormButton>
+        <FormButton text="Reset"></FormButton>
+        <FormButton text="Show Example"></FormButton>
+      </form>
     </>
   );
 }
