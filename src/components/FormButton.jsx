@@ -1,5 +1,9 @@
 function FormButton({ text, handleClick }) {
-  return <button onClick={handleClick}>{text}</button>;
+  return (
+    <button type="button" onClick={handleClick}>
+      {text}
+    </button>
+  );
 }
 
 export default FormButton;
