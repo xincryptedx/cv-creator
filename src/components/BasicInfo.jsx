@@ -1,10 +1,13 @@
-function BasicInfo() {
+import FormInput from "./FormInput";
+
+function BasicInfo({ firstName }) {
   return (
     <section>
-      <label htmlFor="firstName">First:</label>
-      <input id="firstName" type="text" />
-      <label htmlFor="lastName">Last:</label>
-      <input id="lastName" type="text" />
+      <FormInput
+        labelFor="firstName"
+        labelText="First:"
+        inputValue={firstName}
+      ></FormInput>
     </section>
   );
 }
