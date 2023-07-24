@@ -2,14 +2,14 @@ function FormInput({
   labelText,
   labelFor,
   inputValue,
-  handleChange,
+  setDataProperty,
   inputType = "text",
 }) {
   return (
     <>
       <label htmlFor={labelFor}>{labelText}</label>
       <input
-        onChange={(event) => handleChange(event, "firstName")}
+        onChange={(event) => setDataProperty(event, "firstName")}
         id={labelFor}
         value={inputValue}
         type={inputType}
