@@ -3,7 +3,14 @@ import BasicInfo from "./BasicInfo";
 import { useState } from "react";
 
 function CvForm() {
-  const [basicInfo, setBasicInfo] = useState({ firstName: "", lastName: "" });
+  const [basicInfo, setBasicInfo] = useState({
+    firstName: "",
+    lastName: "",
+    summary: "",
+    phone: "",
+    email: "",
+    address: "",
+  });
   return (
     <>
       <form>
