@@ -9,7 +9,7 @@ function FormInput({
     <>
       <label htmlFor={labelFor}>{labelText}</label>
       <input
-        onChange={handleChange}
+        onChange={(event) => handleChange(event, "firstName")}
         id={labelFor}
         value={inputValue}
         type={inputType}
