@@ -2,7 +2,7 @@ import FormInput from "./FormInput";
 
 function BasicInfo({ data, setData }) {
   //Data refs
-  const { firstName, lastName } = data;
+  const { firstName, lastName, summary, phone, email, address } = data;
   // Data change handlers
   function setDataProperty(event, property) {
     setData({ ...data, [property]: event.target.value });
@@ -14,6 +14,22 @@ function BasicInfo({ data, setData }) {
 
   function setLast(event) {
     setDataProperty(event, "lastName");
+  }
+
+  function setSummary(event) {
+    setDataProperty(event, "summary");
+  }
+
+  function setPhone(event) {
+    setDataProperty(event, "phone");
+  }
+
+  function setEmail(event) {
+    setDataProperty(event, "email");
+  }
+
+  function setAddress(event) {
+    setDataProperty(event, "address");
   }
 
   return (
@@ -29,6 +45,30 @@ function BasicInfo({ data, setData }) {
         labelText="Last:"
         inputValue={lastName}
         setDataProperty={setLast}
+      ></FormInput>
+      <FormInput
+        labelFor="phone"
+        labelText="Phone:"
+        inputValue={phone}
+        setDataProperty={setPhone}
+      ></FormInput>
+      <FormInput
+        labelFor="email"
+        labelText="Email:"
+        inputValue={email}
+        setDataProperty={setEmail}
+      ></FormInput>
+      <FormInput
+        labelFor="address"
+        labelText="Address:"
+        inputValue={address}
+        setDataProperty={setAddress}
+      ></FormInput>
+      <FormInput
+        labelFor="summary"
+        labelText="Summary:"
+        inputValue={summary}
+        setDataProperty={setSummary}
       ></FormInput>
     </section>
   );
