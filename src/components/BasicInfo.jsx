@@ -11,7 +11,7 @@ function BasicInfo({ data, setData }) {
         labelFor="firstName"
         labelText="First:"
         inputValue={firstName}
-        handleChange={setDataProperty}
+        setDataProperty={setDataProperty}
       ></FormInput>
     </section>
   );
