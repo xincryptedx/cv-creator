@@ -1,0 +1,16 @@
+.basicInfoSection {
+  display: grid;
+
+  color: var(--font_1);
+  font-weight: bold;
+  font-size: 1.2rem;
+  background-color: var(--background_2);
+}
+
+.basicInfoSection input {
+  color: var(--font_1);
+  font-size: 1.1rem;
+  background-color: var(--background_1);
+  border: 2px solid var(--primary_1);
+  border-radius: 5px;
+}
