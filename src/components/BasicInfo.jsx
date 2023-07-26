@@ -1,4 +1,5 @@
 import FormInput from "./FormInput";
+import styles from "../style/CvFrom.module.css";
 
 function BasicInfo({ data, setData }) {
   //Data refs
@@ -33,7 +34,7 @@ function BasicInfo({ data, setData }) {
   }
 
   return (
-    <section>
+    <section className={styles.basicInfoSection}>
       <FormInput
         labelFor="firstName"
         labelText="First:"
