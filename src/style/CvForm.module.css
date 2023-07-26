@@ -5,12 +5,30 @@
   --font_1: #1f1f1f;
   --primary_1: #b4c4f0;
   --primary_2: #5a6da3;
+  --primary_3: #d1d9f0;
 }
 
 .cvForm {
   display: grid;
 
   max-width: 900px;
+}
+
+.cvForm button {
+  color: var(--font_1);
+  font-weight: bold;
+  background-color: var(--primary_1);
+  border: 2px solid var(--primary_2);
+  border-radius: 5px;
+}
+
+.cvForm button:hover {
+  background-color: var(--primary_3);
+  border-color: var(--primary_1);
+}
+
+.cvForm button:active {
+  background-color: var(--primary_2);
 }
 
 .basicInfoSection {
