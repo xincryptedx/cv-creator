@@ -1,5 +1,5 @@
 import FormInput from "./FormInput";
-import styles from "../style/CvFrom.module.css";
+import styles from "../style/CvForm.module.css";
 
 function BasicInfo({ data, setData }) {
   //Data refs
