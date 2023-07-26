@@ -14,9 +14,12 @@ function CvForm() {
   });
   return (
     <form className={styles.cvForm}>
-      <FormButton text="Create CV"></FormButton>
-      <FormButton text="Reset"></FormButton>
-      <FormButton text="Show Example"></FormButton>
+      <FormButton className={styles.createButton} text="Create CV"></FormButton>
+      <FormButton className={styles.resetButton} text="Reset"></FormButton>
+      <FormButton
+        className={styles.exampleButton}
+        text="Show Example"
+      ></FormButton>
       <BasicInfo data={basicInfo} setData={setBasicInfo} />
     </form>
   );
