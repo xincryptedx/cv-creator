@@ -29,7 +29,8 @@
   padding: 16px;
 }
 
-.cvForm input {
+.cvForm input,
+.cvForm textarea {
   color: var(--font_1);
   font-size: 1.1rem;
   background-color: var(--background_1);
