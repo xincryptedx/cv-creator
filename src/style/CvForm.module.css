@@ -1,3 +1,12 @@
+:root {
+  --background_1: #fff4d9;
+  --background_2: #efdeb4;
+  --background_3: #baa879;
+  --font_1: #1f1f1f;
+  --primary_1: #b4c4f0;
+  --primary_2: #5a6da3;
+}
+
 .cvForm {
   display: grid;
 
