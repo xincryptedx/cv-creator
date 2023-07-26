@@ -29,6 +29,14 @@
   padding: 16px;
 }
 
+.cvForm input {
+  color: var(--font_1);
+  font-size: 1.1rem;
+  background-color: var(--background_1);
+  border: 2px solid var(--primary_1);
+  border-radius: 5px;
+}
+
 .cvForm button {
   color: var(--font_1);
   font-weight: bold;

@@ -68,6 +68,7 @@ function BasicInfo({ data, setData }) {
       <FormInput
         labelFor="summary"
         labelText="Summary:"
+        inputType="textarea"
         inputValue={summary}
         setDataProperty={setSummary}
       ></FormInput>
