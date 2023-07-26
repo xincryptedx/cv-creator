@@ -20,6 +20,9 @@
   background-color: var(--primary_1);
   border: 2px solid var(--primary_2);
   border-radius: 5px;
+
+  min-height: 45px;
+  max-width: 150px;
 }
 
 .cvForm button:hover {
