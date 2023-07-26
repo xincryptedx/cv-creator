@@ -1,0 +1,5 @@
+.cvForm {
+  display: grid;
+
+  max-width: 900px;
+}
