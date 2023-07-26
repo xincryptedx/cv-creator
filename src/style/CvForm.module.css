@@ -15,4 +15,13 @@
 
 .basicInfoSection {
   display: grid;
+
+  color: var(--font_1);
+  background-color: var(--background_2);
+}
+
+.basicInfoSection input {
+  background-color: var(--background_1);
+  border: 2px solid var(--primary_1);
+  border-radius: 5px;
 }
