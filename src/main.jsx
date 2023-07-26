@@ -2,10 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "normalize.css";
-import styles from "./style/App.module.css";
+import "./style/baseStyles.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App className={styles.app} />
+    <App />
   </React.StrictMode>
 );
