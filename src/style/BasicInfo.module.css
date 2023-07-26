@@ -2,8 +2,5 @@
   grid-area: basicInfo;
   display: grid;
 
-  color: var(--font_1);
-  font-weight: bold;
-  font-size: 1.2rem;
   background-color: var(--background_2);
 }
