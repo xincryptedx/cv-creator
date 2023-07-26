@@ -13,7 +13,7 @@
   grid-template: min-content min-content / min-content min-content min-content 1fr;
   grid-template-areas:
     "create reset example ."
-    "basicInfo";
+    "basicInfo basicInfo basicInfo basicInfo";
 
   width: 100%;
   max-width: 900px;

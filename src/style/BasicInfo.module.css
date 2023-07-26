@@ -1,4 +1,5 @@
 .basicInfoSection {
+  grid-area: basicInfo;
   display: grid;
 
   color: var(--font_1);
