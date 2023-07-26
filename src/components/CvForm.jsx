@@ -1,6 +1,7 @@
 import FormButton from "./FormButton";
 import BasicInfo from "./BasicInfo";
 import { useState } from "react";
+import styles from "../style/CvForm.module.css";
 
 function CvForm() {
   const [basicInfo, setBasicInfo] = useState({
@@ -12,14 +13,12 @@ function CvForm() {
     address: "",
   });
   return (
-    <>
-      <form>
-        <FormButton text="Create CV"></FormButton>
-        <FormButton text="Reset"></FormButton>
-        <FormButton text="Show Example"></FormButton>
-        <BasicInfo data={basicInfo} setData={setBasicInfo} />
-      </form>
-    </>
+    <form className={styles.cvForm}>
+      <FormButton text="Create CV"></FormButton>
+      <FormButton text="Reset"></FormButton>
+      <FormButton text="Show Example"></FormButton>
+      <BasicInfo data={basicInfo} setData={setBasicInfo} />
+    </form>
   );
 }
 
