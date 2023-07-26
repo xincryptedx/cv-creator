@@ -1,6 +1,6 @@
-function FormButton({ text, handleClick }) {
+function FormButton({ text, handleClick, className }) {
   return (
-    <button type="button" onClick={handleClick}>
+    <button className={className} type="button" onClick={handleClick}>
       {text}
     </button>
   );
