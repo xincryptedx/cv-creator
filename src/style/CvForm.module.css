@@ -10,7 +10,12 @@
 
 .cvForm {
   display: grid;
+  grid-template: min-content min-content / min-content min-content min-content 1fr;
+  grid-template-areas:
+    "create reset example ."
+    "basicInfo";
 
+  width: 100%;
   max-width: 900px;
 }
 
@@ -32,4 +37,16 @@
 
 .cvForm button:active {
   background-color: var(--primary_2);
+}
+
+.createButton {
+  grid-area: create;
+}
+
+.resetButton {
+  grid-area: reset;
+}
+
+.exampleButton {
+  grid-area: example;
 }
