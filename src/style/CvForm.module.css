@@ -10,7 +10,7 @@
 
 .cvForm {
   display: grid;
-  grid-template: min-content min-content / min-content min-content min-content 1fr;
+  grid-template: min-content min-content / repeat(3, minmax(min-content, 150px)) 1fr;
   grid-template-areas:
     "create reset example ."
     "basicInfo basicInfo basicInfo basicInfo";
@@ -27,7 +27,6 @@
   border-radius: 5px;
 
   min-height: 45px;
-  max-width: 150px;
 }
 
 .cvForm button:hover {
