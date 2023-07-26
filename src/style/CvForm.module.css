@@ -10,12 +10,12 @@
 
 .cvForm {
   display: grid;
-  grid-template: min-content min-content / 1fr repeat(
-      3,
+  grid-template: min-content min-content / minmax(min-content, 150px) 1fr repeat(
+      2,
       minmax(min-content, 150px)
     );
   grid-template-areas:
-    ". create reset example"
+    "create . example reset"
     "basicInfo basicInfo basicInfo basicInfo";
   gap: 10px;
 
