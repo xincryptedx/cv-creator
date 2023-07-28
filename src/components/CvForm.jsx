@@ -28,7 +28,7 @@ function CvForm() {
       dateTo: "",
     };
 
-    // Add the new entry to entries data
+    // Add the new entry to entries data state
     setEducationEntries((previousEntries) => {
       return [...previousEntries, newEntry];
     });
@@ -41,6 +41,7 @@ function CvForm() {
       <DynamicEntriesContainer
         entriesData={educationEntries}
         setEntriesData={setEducationEntries}
+        addDataEntry={addEducationEntryData}
       ></DynamicEntriesContainer>
       <FormControls></FormControls>
     </form>
