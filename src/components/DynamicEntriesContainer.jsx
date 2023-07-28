@@ -9,6 +9,7 @@ function DynamicEntriesContainer({
 }) {
   function setDataProperty(event, property, entryUid) {
     setEntriesData((previousEntries) => {
+      console.log(`Updating Property: ${property} on entry id: ${entryUid}`);
       const updatedEntries = [...previousEntries];
       const index = updatedEntries.findIndex((entry) => entry.uid === entryUid);
       updatedEntries[index] = {
