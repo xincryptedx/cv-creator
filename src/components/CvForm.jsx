@@ -42,6 +42,7 @@ function CvForm() {
         entriesData={educationEntries}
         setEntriesData={setEducationEntries}
         addDataEntry={addEducationEntryData}
+        EntryElement={EducationEntry}
       ></DynamicEntriesContainer>
       <FormControls></FormControls>
     </form>
