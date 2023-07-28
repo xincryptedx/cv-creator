@@ -51,7 +51,7 @@ function CvForm() {
         entriesData={educationEntries}
         setEntriesData={setEducationEntries}
         addDataEntry={addEducationEntryData}
-        removeEntryData={removeEducationEntryData}
+        removeDataEntry={removeEducationEntryData}
         EntryElement={EducationEntry}
         headerText={"Education"}
       ></DynamicEntriesContainer>
