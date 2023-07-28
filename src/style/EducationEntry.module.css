@@ -4,3 +4,8 @@
 
   background-color: var(--background_2);
 }
+
+.removeButton {
+  max-width: 150px;
+  justify-self: end;
+}
