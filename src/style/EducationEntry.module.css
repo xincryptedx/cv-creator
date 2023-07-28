@@ -1,0 +1,5 @@
+.educationEntry {
+  display: grid;
+
+  background-color: var(--background_2);
+}
