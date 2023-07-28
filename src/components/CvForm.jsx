@@ -16,6 +16,7 @@ function CvForm() {
     <form className={styles.cvForm}>
       <FormControls></FormControls>
       <BasicInfo data={basicInfo} setData={setBasicInfo} />
+      <FormControls></FormControls>
     </form>
   );
 }
