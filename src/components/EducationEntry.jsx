@@ -1,7 +1,7 @@
 import FormInput from "./FormInput";
 import styles from "../style/BasicInfo.module.css";
 
-function EducationInfo({ data, setData }) {
+function EducationEntry({ data, setData }) {
   //Data refs
   const { schoolName, areaOfStudy, dateFrom, dateTo } = data;
   // Data change handlers
@@ -55,4 +55,4 @@ function EducationInfo({ data, setData }) {
   );
 }
 
-export default EducationInfo;
+export default EducationEntry;
