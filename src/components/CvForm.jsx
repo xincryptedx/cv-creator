@@ -34,6 +34,15 @@ function CvForm() {
     });
   };
 
+  const removeEducationEntryData = (uid) => {
+    setEducationEntries((previousEntries) => {
+      const updatedEntries = previousEntries.filter(
+        (entry) => entry.uid !== uid
+      );
+      return updatedEntries;
+    });
+  };
+
   return (
     <form className={styles.cvForm}>
       <FormControls></FormControls>
@@ -42,6 +51,7 @@ function CvForm() {
         entriesData={educationEntries}
         setEntriesData={setEducationEntries}
         addDataEntry={addEducationEntryData}
+        removeEntryData={removeEducationEntryData}
         EntryElement={EducationEntry}
         headerText={"Education"}
       ></DynamicEntriesContainer>
