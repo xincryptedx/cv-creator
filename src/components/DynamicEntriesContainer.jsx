@@ -29,7 +29,7 @@ function DynamicEntriesContainer({
           ></EntryElement>
         );
       })}
-      <FormButton text="Add Entry"></FormButton>
+      <FormButton text="Add Entry" onClick={addDataEntry}></FormButton>
     </section>
   );
 }
