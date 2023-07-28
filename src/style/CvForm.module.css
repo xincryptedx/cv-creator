@@ -10,10 +10,7 @@
 
 .cvForm {
   display: grid;
-  grid-template: min-content min-content / 1fr;
-  grid-template-areas:
-    "formControls"
-    "basicInfo ";
+  grid-auto-rows: min-content;
   gap: 10px;
 
   background-color: var(--background_2);
