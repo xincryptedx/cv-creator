@@ -1,5 +1,6 @@
 .educationEntry {
   display: grid;
+  grid-auto-flow: row;
 
   background-color: var(--background_2);
 }
