@@ -14,14 +14,19 @@ function EducationEntry({ educationEntriesData, setEducationEntriesData }) {
 
   // Add the new entry to entries data
   setEducationEntriesData((previousEntries) => {
-    [...previousEntries, newEntry];
+    return [...previousEntries, newEntry];
   });
 
   function setDataProperty(event, property) {
     setEducationEntriesData((previousEntries) => {
       const updatedEntries = [...previousEntries];
-
-      [...previousEntries, { [property]: event.target.value }];
+      const index = updatedEntries.findIndex(
+        (entry) => entry.uid === newEntry.uid
+      );
+      updatedEntries[index] = {
+        ...updatedEntries[index],
+        [property]: event.target.value,
+      };
       return updatedEntries;
     });
   }
