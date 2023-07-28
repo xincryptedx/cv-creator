@@ -21,14 +21,14 @@ function DynamicEntriesContainer({
 
   return (
     <section className={styles.dynamicEntriesContainer}>
-      {entriesData.forEach((entry) => {
-        return (
-          <EntryElement
-            setDataProperty={setDataProperty}
-            entryData={entry}
-          ></EntryElement>
-        );
-      })}
+      {entriesData.map((entry) => (
+        <EntryElement
+          key={entry.uid}
+          setDataProperty={setDataProperty}
+          entryData={entry}
+        ></EntryElement>
+      ))}
+
       <FormButton text="Add Entry" onClick={addDataEntry}></FormButton>
     </section>
   );
