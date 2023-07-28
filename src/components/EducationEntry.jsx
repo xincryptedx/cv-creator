@@ -1,12 +1,29 @@
 import FormInput from "./FormInput";
 import styles from "../style/EducationEntry.module.css";
+import { v4 as uuidv4 } from "uuid";
 
-function EducationEntry({ data, setData }) {
-  //Data refs
-  const { schoolName, areaOfStudy, dateFrom, dateTo } = data;
-  // Data change handlers
+function EducationEntry({ educationEntriesData, setEducationEntriesData }) {
+  // Create a new education data entry
+  const newEntry = {
+    uid: uuidv4(),
+    schoolName: "",
+    areaOfStudy: "",
+    dateFrom: "",
+    dateTo: "",
+  };
+
+  // Add the new entry to entries data
+  setEducationEntriesData((previousEntries) => {
+    [...previousEntries, newEntry];
+  });
+
   function setDataProperty(event, property) {
-    setData({ ...data, [property]: event.target.value });
+    setEducationEntriesData((previousEntries) => {
+      const updatedEntries = [...previousEntries];
+
+      [...previousEntries, { [property]: event.target.value }];
+      return updatedEntries;
+    });
   }
 
   function setSchoolName(event) {
