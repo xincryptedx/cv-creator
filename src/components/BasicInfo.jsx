@@ -35,6 +35,7 @@ function BasicInfo({ data, setData }) {
 
   return (
     <section className={styles.basicInfoSection}>
+      <h2>Basic Information</h2>
       <FormInput
         labelFor="firstName"
         labelText="First:"
