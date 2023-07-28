@@ -21,7 +21,7 @@ function CvForm() {
     <form className={styles.cvForm}>
       <FormControls></FormControls>
       <BasicInfo data={basicInfo} setData={setBasicInfo} />
-      <DynamicEntriesContainer>Education Entry</DynamicEntriesContainer>
+      <DynamicEntriesContainer></DynamicEntriesContainer>
       <FormControls></FormControls>
     </form>
   );
