@@ -12,6 +12,7 @@ function CvForm() {
     email: "",
     address: "",
   });
+
   return (
     <form className={styles.cvForm}>
       <FormControls></FormControls>
