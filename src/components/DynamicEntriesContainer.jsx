@@ -29,7 +29,6 @@ function DynamicEntriesContainer({
           key={entry.uid}
           setDataProperty={setDataProperty}
           entryData={entry}
-          entriesData={entriesData}
           removeDataEntry={removeDataEntry}
         ></EntryElement>
       ))}
