@@ -21,7 +21,7 @@ function EducationEntry({ entryData, setDataProperty }) {
   }
 
   return (
-    <section className={styles.EducationEntry}>
+    <section className={styles.educationEntry}>
       <FormInput
         labelFor="schoolName"
         labelText="School/Institution:"
