@@ -1,12 +1,9 @@
 import FormInput from "./FormInput";
 import styles from "../style/EducationEntry.module.css";
 
-function EducationEntry({
-  entriesData,
-  setEntriesData,
-  entryData,
-  setDataProperty,
-}) {
+function EducationEntry({ entryData, setDataProperty }) {
+  const { schoolName, areaOfStudy, dateFrom, dateTo } = entryData;
+
   function setSchoolName(event) {
     setDataProperty(event, "schoolName");
   }
