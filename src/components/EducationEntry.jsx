@@ -24,6 +24,7 @@ function EducationEntry({ entryData, setDataProperty, removeDataEntry }) {
   return (
     <section className={styles.educationEntry}>
       <FormButton
+        className={styles.removeButton}
         onClick={() => removeDataEntry(uid)}
         text="Remove Entry"
       ></FormButton>
