@@ -1,5 +1,5 @@
 import FormInput from "./FormInput";
-import styles from "../style/BasicInfo.module.css";
+import styles from "../style/EducationEntry.module.css";
 
 function EducationEntry({ data, setData }) {
   //Data refs
@@ -26,7 +26,7 @@ function EducationEntry({ data, setData }) {
   }
 
   return (
-    <section className={styles.basicInfoSection}>
+    <section className={styles.EducationEntry}>
       <FormInput
         labelFor="schoolName"
         labelText="School/Institution:"
