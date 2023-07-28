@@ -1,0 +1,21 @@
+.formControls {
+  display: grid;
+  grid-template: min-content / minmax(min-content, 150px) 1fr repeat(
+      2,
+      minmax(min-content, 150px)
+    );
+  grid-template-areas: "create . example reset";
+  column-gap: 10px;
+}
+
+.createButton {
+  grid-area: create;
+}
+
+.resetButton {
+  grid-area: reset;
+}
+
+.exampleButton {
+  grid-area: example;
+}
