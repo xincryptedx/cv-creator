@@ -15,6 +15,8 @@ function CvForm() {
     address: "",
   });
 
+  const [educationEntries, setEducationEntries] = useState([]);
+
   return (
     <form className={styles.cvForm}>
       <FormControls></FormControls>

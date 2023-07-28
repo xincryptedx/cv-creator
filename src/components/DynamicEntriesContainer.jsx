@@ -1,8 +1,9 @@
 import FormButton from "./FormButton";
+import styles from "../style/DynamicEntriesContainer.module.css";
 
 function DynamicEntriesContainer({ children }) {
   return (
-    <section>
+    <section className={styles.dynamicEntriesContainer}>
       {children}
       <FormButton text="Add Entry"></FormButton>
     </section>
