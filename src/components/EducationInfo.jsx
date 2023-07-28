@@ -27,7 +27,6 @@ function EducationInfo({ data, setData }) {
 
   return (
     <section className={styles.basicInfoSection}>
-      <h2>Education</h2>
       <FormInput
         labelFor="schoolName"
         labelText="School/Institution:"
