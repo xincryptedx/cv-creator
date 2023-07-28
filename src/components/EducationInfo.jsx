@@ -3,75 +3,54 @@ import styles from "../style/BasicInfo.module.css";
 
 function EducationInfo({ data, setData }) {
   //Data refs
-  const { firstName, lastName, summary, phone, email, address } = data;
+  const { schoolName, areaOfStudy, dateFrom, dateTo } = data;
   // Data change handlers
   function setDataProperty(event, property) {
     setData({ ...data, [property]: event.target.value });
   }
 
-  function setFirst(event) {
-    setDataProperty(event, "firstName");
+  function setSchoolName(event) {
+    setDataProperty(event, "schoolName");
   }
 
-  function setLast(event) {
-    setDataProperty(event, "lastName");
+  function setAreaOfStudy(event) {
+    setDataProperty(event, "areaOfStudy");
   }
 
-  function setSummary(event) {
-    setDataProperty(event, "summary");
+  function setDateFrom(event) {
+    setDataProperty(event, "dateFrom");
   }
 
-  function setPhone(event) {
-    setDataProperty(event, "phone");
-  }
-
-  function setEmail(event) {
-    setDataProperty(event, "email");
-  }
-
-  function setAddress(event) {
-    setDataProperty(event, "address");
+  function setDateTo(event) {
+    setDataProperty(event, "dateTo");
   }
 
   return (
     <section className={styles.basicInfoSection}>
-      <h2>Basic Information</h2>
+      <h2>Education</h2>
       <FormInput
-        labelFor="firstName"
-        labelText="First:"
-        inputValue={firstName}
-        setDataProperty={setFirst}
+        labelFor="schoolName"
+        labelText="School/Institution:"
+        inputValue={schoolName}
+        setDataProperty={setSchoolName}
       ></FormInput>
       <FormInput
-        labelFor="lastName"
-        labelText="Last:"
-        inputValue={lastName}
-        setDataProperty={setLast}
+        labelFor="areaOfStudy"
+        labelText="Degree/Area of Study:"
+        inputValue={areaOfStudy}
+        setDataProperty={setAreaOfStudy}
       ></FormInput>
       <FormInput
-        labelFor="phone"
-        labelText="Phone:"
-        inputValue={phone}
-        setDataProperty={setPhone}
+        labelFor="dateFrom"
+        labelText="Date From:"
+        inputValue={dateFrom}
+        setDataProperty={setDateFrom}
       ></FormInput>
       <FormInput
-        labelFor="email"
-        labelText="Email:"
-        inputValue={email}
-        setDataProperty={setEmail}
-      ></FormInput>
-      <FormInput
-        labelFor="address"
-        labelText="Address:"
-        inputValue={address}
-        setDataProperty={setAddress}
-      ></FormInput>
-      <FormInput
-        labelFor="summary"
-        labelText="Summary:"
-        inputType="textarea"
-        inputValue={summary}
-        setDataProperty={setSummary}
+        labelFor="dateTo"
+        labelText="Date Until:"
+        inputValue={dateTo}
+        setDataProperty={setDateTo}
       ></FormInput>
     </section>
   );
