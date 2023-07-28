@@ -56,3 +56,9 @@
 .cvForm button:active {
   background-color: var(--primary_2);
 }
+
+.cvForm section {
+  border: 3px solid var(--primary_1);
+  border-radius: 5px;
+  padding: 10px;
+}
