@@ -1,4 +1,4 @@
-import FormButton from "./FormButton";
+import FormControls from "./FormControls";
 import BasicInfo from "./BasicInfo";
 import { useState } from "react";
 import styles from "../style/CvForm.module.css";
@@ -14,12 +14,7 @@ function CvForm() {
   });
   return (
     <form className={styles.cvForm}>
-      <FormButton className={styles.createButton} text="Create CV"></FormButton>
-      <FormButton className={styles.resetButton} text="Reset"></FormButton>
-      <FormButton
-        className={styles.exampleButton}
-        text="Show Example"
-      ></FormButton>
+      <FormControls></FormControls>
       <BasicInfo data={basicInfo} setData={setBasicInfo} />
     </form>
   );
