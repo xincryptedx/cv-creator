@@ -6,6 +6,7 @@ function DynamicEntriesContainer({
   setEntriesData,
   addDataEntry,
   EntryElement,
+  headerText,
 }) {
   function setDataProperty(event, property, entryUid) {
     setEntriesData((previousEntries) => {
@@ -21,6 +22,7 @@ function DynamicEntriesContainer({
 
   return (
     <section className={styles.dynamicEntriesContainer}>
+      <h2>{headerText}</h2>
       {entriesData.map((entry) => (
         <EntryElement
           key={entry.uid}
