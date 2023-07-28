@@ -1,4 +1,5 @@
 .dynamicEntriesContainer {
   display: grid;
   grid-auto-flow: row;
+  gap: 10px;
 }
