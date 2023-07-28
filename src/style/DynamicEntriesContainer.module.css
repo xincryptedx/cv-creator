@@ -3,3 +3,11 @@
   grid-auto-flow: row;
   gap: 10px;
 }
+
+.dynamicEntriesContainer section {
+  border-style: dotted;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  border-radius: 0;
+}
