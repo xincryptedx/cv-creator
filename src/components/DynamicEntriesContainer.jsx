@@ -5,6 +5,7 @@ function DynamicEntriesContainer({
   entriesData,
   setEntriesData,
   addDataEntry,
+  removeDataEntry,
   EntryElement,
   headerText,
 }) {
@@ -29,6 +30,7 @@ function DynamicEntriesContainer({
           setDataProperty={setDataProperty}
           entryData={entry}
           entriesData={entriesData}
+          removeDataEntry={removeDataEntry}
         ></EntryElement>
       ))}
 
