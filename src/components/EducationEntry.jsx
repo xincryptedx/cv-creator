@@ -1,7 +1,8 @@
 import FormInput from "./FormInput";
+import FormButton from "./FormButton";
 import styles from "../style/EducationEntry.module.css";
 
-function EducationEntry({ entryData, setDataProperty }) {
+function EducationEntry({ entryData, setDataProperty, removeDataEntry }) {
   const { uid, schoolName, areaOfStudy, dateFrom, dateTo } = entryData;
 
   function setSchoolName(event) {
@@ -22,6 +23,10 @@ function EducationEntry({ entryData, setDataProperty }) {
 
   return (
     <section className={styles.educationEntry}>
+      <FormButton
+        onClick={() => removeDataEntry(uid)}
+        text="Remove Entry"
+      ></FormButton>
       <FormInput
         labelFor="schoolName"
         labelText="School/Institution:"
