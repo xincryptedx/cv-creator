@@ -1,8 +1,9 @@
 import FormControls from "./FormControls";
+import styles from "../style/CvPreview.module.css";
 
 function CvPreview({ appState, setAppState }) {
   return (
-    <main>
+    <main className={styles.cvPreview}>
       <FormControls
         appState={appState}
         setAppState={setAppState}
