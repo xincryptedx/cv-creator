@@ -22,7 +22,22 @@ function CvPreview({
           </div>
         );
       } else if (type === "work") {
-        return <div key={entry.uid}>Work Entry!</div>;
+        return (
+          <div key={entry.uid}>
+            <p>{`${entry.companyName} ${
+              entry.role !== "" ? `- ${entry.role}` : ""
+            }`}</p>
+            <p>{`${entry.dateFrom !== "" ? `From: ${entry.dateFrom}` : ""}${
+              entry.dateTo !== "" ? ` Until: ${entry.dateTo}` : ""
+            }`}</p>
+            {entry.tasks !== "" ? (
+              <p>
+                <span>Main Responsibilities: </span>
+                {entry.tasks}
+              </p>
+            ) : null}
+          </div>
+        );
       }
     });
   }
