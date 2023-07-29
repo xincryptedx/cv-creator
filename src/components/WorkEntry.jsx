@@ -45,13 +45,6 @@ function WorkEntry({ entryData, setDataProperty, removeDataEntry }) {
         setDataProperty={setRole}
       ></FormInput>
       <FormInput
-        labelFor="tasks"
-        labelText="Responsibilities/Tasks:"
-        inputValue={tasks}
-        setDataProperty={setTasks}
-        inputType="textarea"
-      ></FormInput>
-      <FormInput
         labelFor="dateFrom"
         labelText="Date From:"
         inputValue={dateFrom}
@@ -62,6 +55,13 @@ function WorkEntry({ entryData, setDataProperty, removeDataEntry }) {
         labelText="Date Until:"
         inputValue={dateTo}
         setDataProperty={setDateTo}
+      ></FormInput>
+      <FormInput
+        labelFor="tasks"
+        labelText="Responsibilities/Tasks:"
+        inputValue={tasks}
+        setDataProperty={setTasks}
+        inputType="textarea"
       ></FormInput>
     </section>
   );
