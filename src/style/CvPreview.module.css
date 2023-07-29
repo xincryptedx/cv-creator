@@ -10,6 +10,9 @@
 
 .cvPreview {
   display: grid;
+  grid-auto-rows: min-content;
+  gap: 10px;
+  justify-items: center;
 
   background-color: var(--background_2);
   border-radius: 5px;
@@ -38,4 +41,11 @@
 
 .cvPreview button:active {
   background-color: var(--primary_2);
+}
+
+.cvContainer {
+  background-color: white;
+
+  max-width: 850px;
+  aspect-ratio: 8.5 / 11;
 }
