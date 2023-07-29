@@ -8,7 +8,7 @@ function CvPreview({ appState, setAppState }) {
         appState={appState}
         setAppState={setAppState}
       ></FormControls>
-      <div>Im a CV!</div>
+      <div className={styles.cvContainer}></div>
     </main>
   );
 }
