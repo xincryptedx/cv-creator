@@ -1,5 +1,6 @@
 import CvForm from "./components/CvForm";
 import { useState } from "react";
+import CvPreview from "./components/CvPreview";
 
 function App() {
   const [basicInfo, setBasicInfo] = useState({
@@ -17,8 +18,8 @@ function App() {
 
   const [appState, setAppState] = useState({ showForm: true });
 
-  return (
-    <>
+  if (appState.showForm === true)
+    return (
       <CvForm
         basicInfo={basicInfo}
         setBasicInfo={setBasicInfo}
@@ -29,8 +30,8 @@ function App() {
         appState={appState}
         setAppState={setAppState}
       />
-    </>
-  );
+    );
+  else if (appState.showForm === false) return <CvPreview></CvPreview>;
 }
 
 export default App;
