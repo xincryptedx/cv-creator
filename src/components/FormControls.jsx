@@ -8,6 +8,12 @@ function FormControls({ appState, setAppState }) {
     });
   };
 
+  const editClicked = () => {
+    setAppState((previousState) => {
+      return { ...previousState, showForm: true };
+    });
+  };
+
   if (appState.showForm === true)
     return (
       <nav className={styles.formControls}>
@@ -29,7 +35,7 @@ function FormControls({ appState, setAppState }) {
         <FormButton
           className={styles.createButton}
           text="Edit CV"
-          onClick={createClicked}
+          onClick={editClicked}
         ></FormButton>
         <FormButton className={styles.printButton} text="Print"></FormButton>
         <FormButton
