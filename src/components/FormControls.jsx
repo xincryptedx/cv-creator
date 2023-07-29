@@ -31,9 +31,9 @@ function FormControls({ appState, setAppState }) {
     );
   else
     return (
-      <nav className={styles.formControls}>
+      <nav className={styles.previewControls}>
         <FormButton
-          className={styles.createButton}
+          className={styles.editButton}
           text="Edit CV"
           onClick={editClicked}
         ></FormButton>
