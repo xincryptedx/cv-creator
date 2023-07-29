@@ -1,0 +1,11 @@
+.workEntry {
+  display: grid;
+  grid-auto-flow: row;
+
+  background-color: var(--background_2);
+}
+
+.removeButton {
+  max-width: 150px;
+  justify-self: end;
+}
