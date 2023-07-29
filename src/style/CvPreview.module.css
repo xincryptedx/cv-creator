@@ -12,7 +12,6 @@
   display: grid;
   grid-auto-rows: min-content;
   gap: 10px;
-  justify-items: center;
 
   background-color: var(--background_2);
   border-radius: 5px;
@@ -44,7 +43,11 @@
 }
 
 .cvContainer {
+  justify-self: center;
+
   background-color: white;
+  border: 1px solid black;
+  box-shadow: 1px 1px 2px grey;
 
   width: 638px;
   aspect-ratio: 8.5 / 11;
