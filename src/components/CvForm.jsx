@@ -13,6 +13,8 @@ function CvForm({
   setEducationEntries,
   workEntries,
   setWorkEntries,
+  appState,
+  setAppState,
 }) {
   const addEducationEntryData = () => {
     // Create a new education data entry
@@ -65,29 +67,33 @@ function CvForm({
     });
   };
 
-  return (
-    <form className={styles.cvForm}>
-      <FormControls></FormControls>
-      <BasicInfo data={basicInfo} setData={setBasicInfo} />
-      <DynamicEntriesContainer
-        entriesData={educationEntries}
-        setEntriesData={setEducationEntries}
-        addDataEntry={addEducationEntryData}
-        removeDataEntry={removeEducationEntryData}
-        EntryElement={EducationEntry}
-        headerText={"Education"}
-      ></DynamicEntriesContainer>
-      <DynamicEntriesContainer
-        entriesData={workEntries}
-        setEntriesData={setWorkEntries}
-        addDataEntry={addWorkEntryData}
-        removeDataEntry={removeWorkEntryData}
-        EntryElement={WorkEntry}
-        headerText={"Practical Experience"}
-      ></DynamicEntriesContainer>
-      <FormControls></FormControls>
-    </form>
-  );
+  if (appState.showForm === true)
+    return (
+      <form className={styles.cvForm}>
+        <FormControls></FormControls>
+        <BasicInfo data={basicInfo} setData={setBasicInfo} />
+        <DynamicEntriesContainer
+          entriesData={educationEntries}
+          setEntriesData={setEducationEntries}
+          addDataEntry={addEducationEntryData}
+          removeDataEntry={removeEducationEntryData}
+          EntryElement={EducationEntry}
+          headerText={"Education"}
+        ></DynamicEntriesContainer>
+        <DynamicEntriesContainer
+          entriesData={workEntries}
+          setEntriesData={setWorkEntries}
+          addDataEntry={addWorkEntryData}
+          removeDataEntry={removeWorkEntryData}
+          EntryElement={WorkEntry}
+          headerText={"Practical Experience"}
+        ></DynamicEntriesContainer>
+        <FormControls
+          appState={appState}
+          setAppState={setAppState}
+        ></FormControls>
+      </form>
+    );
 }
 
 export default CvForm;
