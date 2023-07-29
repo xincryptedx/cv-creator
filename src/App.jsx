@@ -31,7 +31,10 @@ function App() {
         setAppState={setAppState}
       />
     );
-  else if (appState.showForm === false) return <CvPreview></CvPreview>;
+  else if (appState.showForm === false)
+    return (
+      <CvPreview appState={appState} setAppState={setAppState}></CvPreview>
+    );
 }
 
 export default App;
