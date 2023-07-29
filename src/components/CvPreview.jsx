@@ -1,10 +1,12 @@
-function CvPreview({ appState }) {
-  if (appState.showForm === false)
-    return (
-      <main>
-        <div>Im a CV!</div>
-      </main>
-    );
+import FormControls from "./FormControls";
+
+function CvPreview() {
+  return (
+    <main>
+      <FormControls></FormControls>
+      <div>Im a CV!</div>
+    </main>
+  );
 }
 
 export default CvPreview;
