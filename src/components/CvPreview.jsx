@@ -15,7 +15,12 @@ function CvPreview({
         setAppState={setAppState}
       ></FormControls>
       <div className={styles.cvContainer}>
-        <h1>Name</h1>
+        <h2>{`${basicInfo.firstName} ${basicInfo.lastName}`}</h2>
+        {basicInfo.address !== "" ? (
+          <p>{`Address: ${basicInfo.address}`}</p>
+        ) : null}
+        {basicInfo.phone !== "" ? <p>{`Phone: ${basicInfo.phone}`}</p> : null}
+        {basicInfo.email !== "" ? <p>{`Email: ${basicInfo.email}`}</p> : null}
       </div>
     </main>
   );
