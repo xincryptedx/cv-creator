@@ -10,6 +10,8 @@ function CvForm({
   setBasicInfo,
   educationEntries,
   setEducationEntries,
+  workEntries,
+  setWorkEntries,
 }) {
   const addEducationEntryData = () => {
     // Create a new education data entry
@@ -29,6 +31,32 @@ function CvForm({
 
   const removeEducationEntryData = (uid) => {
     setEducationEntries((previousEntries) => {
+      const updatedEntries = previousEntries.filter(
+        (entry) => entry.uid !== uid
+      );
+      return updatedEntries;
+    });
+  };
+
+  const addWorkEntryData = () => {
+    // Create a new education data entry
+    const newEntry = {
+      uid: uuidv4(),
+      companyName: "",
+      role: "",
+      tasks: "",
+      dateFrom: "",
+      dateTo: "",
+    };
+
+    // Add the new entry to entries data state
+    setWorkEntries((previousEntries) => {
+      return [...previousEntries, newEntry];
+    });
+  };
+
+  const removeWorkEntryData = (uid) => {
+    setWorkEntries((previousEntries) => {
       const updatedEntries = previousEntries.filter(
         (entry) => entry.uid !== uid
       );
