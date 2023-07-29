@@ -2,22 +2,15 @@ import FormControls from "./FormControls";
 import BasicInfo from "./BasicInfo";
 import DynamicEntriesContainer from "./DynamicEntriesContainer";
 import EducationEntry from "./EducationEntry";
-import { useState } from "react";
 import styles from "../style/CvForm.module.css";
 import { v4 as uuidv4 } from "uuid";
 
-function CvForm() {
-  const [basicInfo, setBasicInfo] = useState({
-    firstName: "",
-    lastName: "",
-    summary: "",
-    phone: "",
-    email: "",
-    address: "",
-  });
-
-  const [educationEntries, setEducationEntries] = useState([]);
-
+function CvForm({
+  basicInfo,
+  setBasicInfo,
+  educationEntries,
+  setEducationEntries,
+}) {
   const addEducationEntryData = () => {
     // Create a new education data entry
     const newEntry = {
