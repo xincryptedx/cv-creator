@@ -27,6 +27,8 @@ function CvPreview({
             <p>{basicInfo.summary}</p>
           </>
         ) : null}
+        {educationEntries.length > 0 ? <h2>Education</h2> : null}
+        {workEntries.length > 0 ? <h2>Experience</h2> : null}
       </div>
     </main>
   );
