@@ -21,6 +21,12 @@ function CvPreview({
         ) : null}
         {basicInfo.phone !== "" ? <p>{`Phone: ${basicInfo.phone}`}</p> : null}
         {basicInfo.email !== "" ? <p>{`Email: ${basicInfo.email}`}</p> : null}
+        {basicInfo.summary !== "" ? (
+          <>
+            <h2>Summary</h2>
+            <p>{basicInfo.summary}</p>
+          </>
+        ) : null}
       </div>
     </main>
   );
