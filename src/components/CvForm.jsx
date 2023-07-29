@@ -67,36 +67,35 @@ function CvForm({
     });
   };
 
-  if (appState.showForm === true)
-    return (
-      <form className={styles.cvForm}>
-        <FormControls
-          appState={appState}
-          setAppState={setAppState}
-        ></FormControls>
-        <BasicInfo data={basicInfo} setData={setBasicInfo} />
-        <DynamicEntriesContainer
-          entriesData={educationEntries}
-          setEntriesData={setEducationEntries}
-          addDataEntry={addEducationEntryData}
-          removeDataEntry={removeEducationEntryData}
-          EntryElement={EducationEntry}
-          headerText={"Education"}
-        ></DynamicEntriesContainer>
-        <DynamicEntriesContainer
-          entriesData={workEntries}
-          setEntriesData={setWorkEntries}
-          addDataEntry={addWorkEntryData}
-          removeDataEntry={removeWorkEntryData}
-          EntryElement={WorkEntry}
-          headerText={"Practical Experience"}
-        ></DynamicEntriesContainer>
-        <FormControls
-          appState={appState}
-          setAppState={setAppState}
-        ></FormControls>
-      </form>
-    );
+  return (
+    <form className={styles.cvForm}>
+      <FormControls
+        appState={appState}
+        setAppState={setAppState}
+      ></FormControls>
+      <BasicInfo data={basicInfo} setData={setBasicInfo} />
+      <DynamicEntriesContainer
+        entriesData={educationEntries}
+        setEntriesData={setEducationEntries}
+        addDataEntry={addEducationEntryData}
+        removeDataEntry={removeEducationEntryData}
+        EntryElement={EducationEntry}
+        headerText={"Education"}
+      ></DynamicEntriesContainer>
+      <DynamicEntriesContainer
+        entriesData={workEntries}
+        setEntriesData={setWorkEntries}
+        addDataEntry={addWorkEntryData}
+        removeDataEntry={removeWorkEntryData}
+        EntryElement={WorkEntry}
+        headerText={"Practical Experience"}
+      ></DynamicEntriesContainer>
+      <FormControls
+        appState={appState}
+        setAppState={setAppState}
+      ></FormControls>
+    </form>
+  );
 }
 
 export default CvForm;
