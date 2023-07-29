@@ -19,3 +19,21 @@
 .exampleButton {
   grid-area: example;
 }
+
+.previewControls {
+  display: grid;
+  grid-template: min-content / minmax(min-content, 150px) 1fr repeat(
+      2,
+      minmax(min-content, 150px)
+    );
+  grid-template-areas: "edit . example print";
+  column-gap: 10px;
+}
+
+.editButton {
+  grid-area: edit;
+}
+
+.printButton {
+  grid-area: print;
+}
