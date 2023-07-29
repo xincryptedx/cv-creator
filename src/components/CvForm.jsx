@@ -70,7 +70,10 @@ function CvForm({
   if (appState.showForm === true)
     return (
       <form className={styles.cvForm}>
-        <FormControls></FormControls>
+        <FormControls
+          appState={appState}
+          setAppState={setAppState}
+        ></FormControls>
         <BasicInfo data={basicInfo} setData={setBasicInfo} />
         <DynamicEntriesContainer
           entriesData={educationEntries}
