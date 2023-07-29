@@ -33,7 +33,13 @@ function App() {
     );
   else if (appState.showForm === false)
     return (
-      <CvPreview appState={appState} setAppState={setAppState}></CvPreview>
+      <CvPreview
+        appState={appState}
+        setAppState={setAppState}
+        basicInfo={basicInfo}
+        educationEntries={educationEntries}
+        workEntries={workEntries}
+      ></CvPreview>
     );
 }
 
