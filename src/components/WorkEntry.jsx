@@ -2,15 +2,19 @@ import FormInput from "./FormInput";
 import FormButton from "./FormButton";
 import styles from "../style/WorkEntry.module.css";
 
-function EducationEntry({ entryData, setDataProperty, removeDataEntry }) {
-  const { uid, schoolName, areaOfStudy, dateFrom, dateTo } = entryData;
+function WorkEntry({ entryData, setDataProperty, removeDataEntry }) {
+  const { uid, companyName, role, tasks, dateFrom, dateTo } = entryData;
 
-  function setSchoolName(event) {
-    setDataProperty(event, "schoolName", uid);
+  function setCompanyName(event) {
+    setDataProperty(event, "companyName", uid);
   }
 
-  function setAreaOfStudy(event) {
-    setDataProperty(event, "areaOfStudy", uid);
+  function setRole(event) {
+    setDataProperty(event, "role", uid);
+  }
+
+  function setTasks(event) {
+    setDataProperty(event, "tasks", uid);
   }
 
   function setDateFrom(event) {
@@ -22,23 +26,30 @@ function EducationEntry({ entryData, setDataProperty, removeDataEntry }) {
   }
 
   return (
-    <section className={styles.educationEntry}>
+    <section className={styles.workEntry}>
       <FormButton
         className={styles.removeButton}
         onClick={() => removeDataEntry(uid)}
         text="Remove Entry"
       ></FormButton>
       <FormInput
-        labelFor="schoolName"
-        labelText="School/Institution:"
-        inputValue={schoolName}
-        setDataProperty={setSchoolName}
+        labelFor="companyName"
+        labelText="Company/Organization:"
+        inputValue={companyName}
+        setDataProperty={setCompanyName}
       ></FormInput>
       <FormInput
-        labelFor="areaOfStudy"
-        labelText="Degree/Area of Study:"
-        inputValue={areaOfStudy}
-        setDataProperty={setAreaOfStudy}
+        labelFor="role"
+        labelText="Position/Role:"
+        inputValue={role}
+        setDataProperty={setRole}
+      ></FormInput>
+      <FormInput
+        labelFor="tasks"
+        labelText="Responsibilities/Tasks:"
+        inputValue={tasks}
+        setDataProperty={setTasks}
+        inputType="textarea"
       ></FormInput>
       <FormInput
         labelFor="dateFrom"
@@ -56,4 +67,4 @@ function EducationEntry({ entryData, setDataProperty, removeDataEntry }) {
   );
 }
 
-export default EducationEntry;
+export default WorkEntry;
