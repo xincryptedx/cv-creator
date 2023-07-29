@@ -38,13 +38,13 @@ function BasicInfo({ data, setData }) {
       <h2>Basic Information</h2>
       <FormInput
         labelFor="firstName"
-        labelText="First:"
+        labelText="First Name:"
         inputValue={firstName}
         setDataProperty={setFirst}
       ></FormInput>
       <FormInput
         labelFor="lastName"
-        labelText="Last:"
+        labelText="Last Name:"
         inputValue={lastName}
         setDataProperty={setLast}
       ></FormInput>
@@ -52,18 +52,21 @@ function BasicInfo({ data, setData }) {
         labelFor="phone"
         labelText="Phone:"
         inputValue={phone}
+        inputType="tel"
         setDataProperty={setPhone}
       ></FormInput>
       <FormInput
         labelFor="email"
         labelText="Email:"
         inputValue={email}
+        inputType="email"
         setDataProperty={setEmail}
       ></FormInput>
       <FormInput
         labelFor="address"
         labelText="Address:"
         inputValue={address}
+        inputType="textarea"
         setDataProperty={setAddress}
       ></FormInput>
       <FormInput
