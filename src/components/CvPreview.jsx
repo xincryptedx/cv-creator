@@ -11,7 +11,16 @@ function CvPreview({
   function renderEntries(entries, type) {
     return entries.map((entry) => {
       if (type === "education") {
-        return <div key={entry.uid}>Education Entry!</div>;
+        return (
+          <div key={entry.uid}>
+            <p>{`${entry.schoolName} ${
+              entry.areaOfStudy !== "" ? `- ${entry.areaOfStudy}` : ""
+            }`}</p>
+            <p>{`${entry.dateFrom !== "" ? `From: ${entry.dateFrom}` : ""}${
+              entry.dateTo !== "" ? ` Until: ${entry.dateTo}` : ""
+            }`}</p>
+          </div>
+        );
       } else if (type === "work") {
         return <div key={entry.uid}>Work Entry!</div>;
       }
