@@ -8,6 +8,16 @@ function CvPreview({
   educationEntries,
   workEntries,
 }) {
+  function renderEntries(entries, type) {
+    entries.map((entry) => {
+      if (type === "education") {
+        return <div key={entry.uid}>Education Entry!</div>;
+      } else if (type === "work") {
+        return <div key={entry.uid}>Work Entry!</div>;
+      }
+    });
+  }
+
   return (
     <main className={styles.cvPreview}>
       <FormControls
