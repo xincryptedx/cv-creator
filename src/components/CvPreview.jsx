@@ -9,7 +9,7 @@ function CvPreview({
   workEntries,
 }) {
   function renderEntries(entries, type) {
-    entries.map((entry) => {
+    return entries.map((entry) => {
       if (type === "education") {
         return <div key={entry.uid}>Education Entry!</div>;
       } else if (type === "work") {
@@ -38,7 +38,9 @@ function CvPreview({
           </>
         ) : null}
         {educationEntries.length > 0 ? <h2>Education</h2> : null}
+        {renderEntries(educationEntries, "education")}
         {workEntries.length > 0 ? <h2>Experience</h2> : null}
+        {renderEntries(workEntries, "work")}
       </div>
     </main>
   );
