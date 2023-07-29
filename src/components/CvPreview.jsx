@@ -1,9 +1,12 @@
 import FormControls from "./FormControls";
 
-function CvPreview() {
+function CvPreview({ appState, setAppState }) {
   return (
     <main>
-      <FormControls></FormControls>
+      <FormControls
+        appState={appState}
+        setAppState={setAppState}
+      ></FormControls>
       <div>Im a CV!</div>
     </main>
   );
