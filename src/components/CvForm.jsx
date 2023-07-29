@@ -4,6 +4,7 @@ import DynamicEntriesContainer from "./DynamicEntriesContainer";
 import EducationEntry from "./EducationEntry";
 import styles from "../style/CvForm.module.css";
 import { v4 as uuidv4 } from "uuid";
+import WorkEntry from "./WorkEntry";
 
 function CvForm({
   basicInfo,
@@ -75,6 +76,14 @@ function CvForm({
         removeDataEntry={removeEducationEntryData}
         EntryElement={EducationEntry}
         headerText={"Education"}
+      ></DynamicEntriesContainer>
+      <DynamicEntriesContainer
+        entriesData={workEntries}
+        setEntriesData={setWorkEntries}
+        addDataEntry={addWorkEntryData}
+        removeDataEntry={removeWorkEntryData}
+        EntryElement={WorkEntry}
+        headerText={"Practical Experience"}
       ></DynamicEntriesContainer>
       <FormControls></FormControls>
     </form>

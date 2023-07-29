@@ -15,6 +15,8 @@ function App() {
 
   const [workEntries, setWorkEntries] = useState([]);
 
+  const [appState, setAppState] = useState({ showForm: true });
+
   return (
     <>
       <CvForm
@@ -24,6 +26,8 @@ function App() {
         setEducationEntries={setEducationEntries}
         workEntries={workEntries}
         setWorkEntries={setWorkEntries}
+        appState={appState}
+        setAppState={setAppState}
       />
     </>
   );
