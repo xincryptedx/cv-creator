@@ -72,13 +72,14 @@ function CvForm({
   return (
     <form className={styles.cvForm}>
       {appState.modalOpen && (
-        <Modal
-          setAppState={setAppState}
-          setBasicInfo={setBasicInfo}
-          setEducationEntries={setEducationEntries}
-          setWorkEntries={setWorkEntries}
-        >
-          <ConfirmationModalContent></ConfirmationModalContent>
+        <Modal>
+          <ConfirmationModalContent
+            setAppState={setAppState}
+            setBasicInfo={setBasicInfo}
+            setEducationEntries={setEducationEntries}
+            setWorkEntries={setWorkEntries}
+            message={"Reset all fields?"}
+          ></ConfirmationModalContent>
         </Modal>
       )}
       <FormControls
