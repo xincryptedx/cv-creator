@@ -37,8 +37,11 @@ function App() {
         appState={appState}
         setAppState={setAppState}
         basicInfo={basicInfo}
+        setBasicInfo={setBasicInfo}
         educationEntries={educationEntries}
+        setEducationEntries={setEducationEntries}
         workEntries={workEntries}
+        setWorkEntries={setWorkEntries}
       ></CvPreview>
     );
 }
