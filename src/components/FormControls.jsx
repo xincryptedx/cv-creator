@@ -63,6 +63,7 @@ function FormControls({
         <FormButton
           className={styles.exampleButton}
           text="Show Example"
+          onClick={exampleClicked}
         ></FormButton>
       </nav>
     );
