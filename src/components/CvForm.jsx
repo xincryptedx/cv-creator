@@ -5,6 +5,8 @@ import EducationEntry from "./EducationEntry";
 import styles from "../style/CvForm.module.css";
 import { v4 as uuidv4 } from "uuid";
 import WorkEntry from "./WorkEntry";
+import Modal from "./Modal";
+import ConfirmationModalContent from "./ConfirmationModalContent";
 
 function CvForm({
   basicInfo,
@@ -69,6 +71,11 @@ function CvForm({
 
   return (
     <form className={styles.cvForm}>
+      {appState.modalOpen && (
+        <Modal>
+          <ConfirmationModalContent></ConfirmationModalContent>
+        </Modal>
+      )}
       <FormControls
         appState={appState}
         setAppState={setAppState}
