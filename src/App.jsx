@@ -16,7 +16,10 @@ function App() {
 
   const [workEntries, setWorkEntries] = useState([]);
 
-  const [appState, setAppState] = useState({ showForm: true });
+  const [appState, setAppState] = useState({
+    showForm: true,
+    modalOpen: false,
+  });
 
   if (appState.showForm === true)
     return (
