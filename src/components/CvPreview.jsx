@@ -5,8 +5,11 @@ function CvPreview({
   appState,
   setAppState,
   basicInfo,
+  setBasicInfo,
   educationEntries,
+  setEducationEntries,
   workEntries,
+  setWorkEntries,
 }) {
   function renderEntries(entries, type) {
     return entries.map((entry) => {
@@ -47,6 +50,9 @@ function CvPreview({
       <FormControls
         appState={appState}
         setAppState={setAppState}
+        setBasicInfo={setBasicInfo}
+        setEducationEntries={setEducationEntries}
+        setWorkEntries={setWorkEntries}
       ></FormControls>
       <div className={styles.cvContainer}>
         <h2>{`${basicInfo.firstName} ${basicInfo.lastName}`}</h2>
