@@ -31,6 +31,10 @@ function FormControls({
     window.print();
   };
 
+  const resetClicked = () => {
+    setAppState((previousState) => ({ ...previousState, modalOpen: true }));
+  };
+
   if (appState.showForm === true)
     return (
       <nav className={styles.formControls}>
@@ -39,7 +43,11 @@ function FormControls({
           text="Create CV"
           onClick={createClicked}
         ></FormButton>
-        <FormButton className={styles.resetButton} text="Reset"></FormButton>
+        <FormButton
+          className={styles.resetButton}
+          text="Reset"
+          onClick={resetClicked}
+        ></FormButton>
         <FormButton
           className={styles.exampleButton}
           text="Show Example"

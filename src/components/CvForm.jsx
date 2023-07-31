@@ -72,7 +72,12 @@ function CvForm({
   return (
     <form className={styles.cvForm}>
       {appState.modalOpen && (
-        <Modal>
+        <Modal
+          setAppState={setAppState}
+          setBasicInfo={setBasicInfo}
+          setEducationEntries={setEducationEntries}
+          setWorkEntries={setWorkEntries}
+        >
           <ConfirmationModalContent></ConfirmationModalContent>
         </Modal>
       )}
