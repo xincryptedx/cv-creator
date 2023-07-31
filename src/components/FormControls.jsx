@@ -14,6 +14,10 @@ function FormControls({ appState, setAppState }) {
     });
   };
 
+  const printClicked = () => {
+    window.print();
+  };
+
   if (appState.showForm === true)
     return (
       <nav className={styles.formControls}>
@@ -37,7 +41,11 @@ function FormControls({ appState, setAppState }) {
           text="Edit CV"
           onClick={editClicked}
         ></FormButton>
-        <FormButton className={styles.printButton} text="Print"></FormButton>
+        <FormButton
+          className={styles.printButton}
+          text="Print"
+          onClick={printClicked}
+        ></FormButton>
         <FormButton
           className={styles.exampleButton}
           text="Show Example"
