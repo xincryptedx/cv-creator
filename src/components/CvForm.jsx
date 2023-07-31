@@ -72,6 +72,9 @@ function CvForm({
       <FormControls
         appState={appState}
         setAppState={setAppState}
+        setBasicInfo={setBasicInfo}
+        setEducationEntries={setEducationEntries}
+        setWorkEntries={setWorkEntries}
       ></FormControls>
       <BasicInfo data={basicInfo} setData={setBasicInfo} />
       <DynamicEntriesContainer
@@ -93,6 +96,9 @@ function CvForm({
       <FormControls
         appState={appState}
         setAppState={setAppState}
+        setBasicInfo={setBasicInfo}
+        setEducationEntries={setEducationEntries}
+        setWorkEntries={setWorkEntries}
       ></FormControls>
     </form>
   );
