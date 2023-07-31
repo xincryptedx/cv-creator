@@ -1,11 +1,24 @@
 import FormButton from "./FormButton";
 import styles from "../style/FormControls.module.css";
+import exampleData from "../assets/exampleData";
 
-function FormControls({ appState, setAppState }) {
+function FormControls({
+  appState,
+  setAppState,
+  setBasicInfo,
+  setEducationEntries,
+  setWorkEntries,
+}) {
   const createClicked = () => {
     setAppState((previousState) => {
       return { ...previousState, showForm: false };
     });
+  };
+
+  const exampleClicked = () => {
+    setBasicInfo(exampleData.basicInfo);
+    setEducationEntries(exampleData.educationEntries);
+    setWorkEntries(exampleData.workEntries);
   };
 
   const editClicked = () => {
@@ -30,6 +43,7 @@ function FormControls({ appState, setAppState }) {
         <FormButton
           className={styles.exampleButton}
           text="Show Example"
+          onClick={exampleClicked}
         ></FormButton>
       </nav>
     );
