@@ -1,7 +1,10 @@
 import { createPortal } from "react-dom";
+import styles from "../style/Modal.module.css";
 
 const Modal = ({ children }) => {
-  return createPortal(children, document.body);
+  const wrappedChildren = <div className={styles.modal}>{children}</div>;
+
+  return createPortal(wrappedChildren, document.body);
 };
 
 export default Modal;
