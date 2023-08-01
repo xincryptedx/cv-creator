@@ -12,9 +12,3 @@
   border-radius: 0;
   padding: 0;
 }
-
-@media print {
-  .dynamicEntriesContainer {
-    display: block;
-  }
-}

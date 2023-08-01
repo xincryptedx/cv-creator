@@ -9,9 +9,3 @@
   max-width: 150px;
   justify-self: end;
 }
-
-@media print {
-  .workEntry {
-    break-inside: avoid;
-  }
-}
