@@ -54,23 +54,32 @@ function CvPreview({
         setEducationEntries={setEducationEntries}
         setWorkEntries={setWorkEntries}
       ></FormControls>
+
       <div className={styles.cvContainer}>
-        <h2>{`${basicInfo.firstName} ${basicInfo.lastName}`}</h2>
-        {basicInfo.address !== "" ? (
-          <p>{`Address: ${basicInfo.address}`}</p>
-        ) : null}
-        {basicInfo.phone !== "" ? <p>{`Phone: ${basicInfo.phone}`}</p> : null}
-        {basicInfo.email !== "" ? <p>{`Email: ${basicInfo.email}`}</p> : null}
-        {basicInfo.summary !== "" ? (
-          <>
-            <h2>Summary</h2>
-            <p>{basicInfo.summary}</p>
-          </>
-        ) : null}
-        {educationEntries.length > 0 ? <h2>Education</h2> : null}
-        {renderEntries(educationEntries, "education")}
-        {workEntries.length > 0 ? <h2>Experience</h2> : null}
-        {renderEntries(workEntries, "work")}
+        <div className={styles.basicInfo}>
+          <h2>{`${basicInfo.firstName} ${basicInfo.lastName}`}</h2>
+          {basicInfo.address !== "" ? (
+            <p>{`Address: ${basicInfo.address}`}</p>
+          ) : null}
+          {basicInfo.phone !== "" ? <p>{`Phone: ${basicInfo.phone}`}</p> : null}
+          {basicInfo.email !== "" ? <p>{`Email: ${basicInfo.email}`}</p> : null}
+          {basicInfo.summary !== "" ? (
+            <>
+              <h2>Summary</h2>
+              <p>{basicInfo.summary}</p>
+            </>
+          ) : null}
+        </div>
+
+        <div className={styles.education}>
+          {educationEntries.length > 0 ? <h2>Education</h2> : null}
+          {renderEntries(educationEntries, "education")}
+        </div>
+
+        <div className={styles.work}>
+          {workEntries.length > 0 ? <h2>Experience</h2> : null}
+          {renderEntries(workEntries, "work")}
+        </div>
       </div>
     </main>
   );
