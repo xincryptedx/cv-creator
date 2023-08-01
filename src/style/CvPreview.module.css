@@ -53,6 +53,22 @@
   aspect-ratio: 8.5 / 11;
 }
 
+.basicInfo {
+  display: grid;
+  justify-items: end;
+}
+
+.basicInfo p {
+  margin: 0;
+  margin-top: 8px;
+  white-space: pre-wrap;
+  text-align: end;
+}
+
+.cvContainer .summary {
+  justify-self: start;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .cvContainer {
