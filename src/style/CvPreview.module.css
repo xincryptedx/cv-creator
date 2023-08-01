@@ -49,13 +49,14 @@
   border: 1px solid black;
   box-shadow: 1px 1px 2px grey;
 
-  width: 638px;
+  width: 600px;
   aspect-ratio: 8.5 / 11;
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .cvContainer {
+    font-size: 8px;
     width: 300px;
   }
 }
@@ -63,6 +64,7 @@
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .cvContainer {
+    font-size: 12px;
     width: 450px;
   }
 }
@@ -70,7 +72,8 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .cvContainer {
-    width: 638px;
+    font-size: 16px;
+    width: 600px;
   }
 }
 
