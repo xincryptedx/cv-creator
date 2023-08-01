@@ -15,7 +15,7 @@ function CvPreview({
     return entries.map((entry) => {
       if (type === "education") {
         return (
-          <div key={entry.uid}>
+          <div key={entry.uid} className={styles.educationEntry}>
             <p>{`${entry.schoolName} ${
               entry.areaOfStudy !== "" ? `- ${entry.areaOfStudy}` : ""
             }`}</p>
@@ -26,7 +26,7 @@ function CvPreview({
         );
       } else if (type === "work") {
         return (
-          <div key={entry.uid}>
+          <div key={entry.uid} className={styles.workEntry}>
             <p>{`${entry.companyName} ${
               entry.role !== "" ? `- ${entry.role}` : ""
             }`}</p>
