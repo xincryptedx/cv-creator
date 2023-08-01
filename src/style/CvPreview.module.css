@@ -76,13 +76,18 @@
   font-weight: bold;
 }
 
-.schoolName span {
+.workEntry .companyName {
+  font-weight: bold;
+}
+
+.schoolName span,
+.companyName span {
   font-style: italic;
+  display: inline;
 }
 
 .workEntry p span {
   font-style: italic;
-  display: inline;
 }
 
 /* Extra small devices (phones, 600px and down) */
