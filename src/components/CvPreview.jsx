@@ -63,13 +63,14 @@ function CvPreview({
           ) : null}
           {basicInfo.phone !== "" ? <p>{`Phone: ${basicInfo.phone}`}</p> : null}
           {basicInfo.email !== "" ? <p>{`Email: ${basicInfo.email}`}</p> : null}
-          {basicInfo.summary !== "" ? (
-            <div className={styles.summary}>
-              <h2>Summary</h2>
-              <p>{basicInfo.summary}</p>
-            </div>
-          ) : null}
         </div>
+
+        {basicInfo.summary !== "" ? (
+          <div className={styles.summary}>
+            <h2>Summary</h2>
+            <p>{basicInfo.summary}</p>
+          </div>
+        ) : null}
 
         <div className={styles.education}>
           {educationEntries.length > 0 ? <h2>Education</h2> : null}
