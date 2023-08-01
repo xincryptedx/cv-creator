@@ -72,6 +72,14 @@
   justify-self: start;
 }
 
+.educationEntry .schoolName {
+  font-weight: bold;
+}
+
+.schoolName span {
+  font-style: italic;
+}
+
 .workEntry p span {
   font-style: italic;
   display: inline;
