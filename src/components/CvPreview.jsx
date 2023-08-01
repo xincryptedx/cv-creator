@@ -64,10 +64,10 @@ function CvPreview({
           {basicInfo.phone !== "" ? <p>{`Phone: ${basicInfo.phone}`}</p> : null}
           {basicInfo.email !== "" ? <p>{`Email: ${basicInfo.email}`}</p> : null}
           {basicInfo.summary !== "" ? (
-            <>
+            <div className={styles.summary}>
               <h2>Summary</h2>
               <p>{basicInfo.summary}</p>
-            </>
+            </div>
           ) : null}
         </div>
 
