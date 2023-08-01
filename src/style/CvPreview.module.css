@@ -72,6 +72,11 @@
   justify-self: start;
 }
 
+.workEntry p span {
+  font-style: italic;
+  display: inline-block;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .cvContainer {
@@ -109,20 +114,24 @@
     display: none;
   }
 
-  body {
-    margin: 0.635cm 0.635cm 1.27cm 0.635cm;
-  }
-
+  .cvPreview,
   .cvContainer,
   .cvContainer * {
     display: block;
   }
 
+  .cvPreview {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+  }
+
   .cvContainer {
     border: none;
     box-shadow: none;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
+    aspect-ratio: auto;
     margin: 0;
     padding: 0;
     font-size: 12pt;
@@ -130,6 +139,7 @@
 
   .basicInfo {
     display: grid;
+    margin: 0;
   }
 
   .basicInfo h2 {
