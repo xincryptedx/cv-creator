@@ -29,9 +29,11 @@ function CvPreview({
       } else if (type === "work") {
         return (
           <div key={entry.uid} className={styles.workEntry}>
-            <p>{`${entry.companyName} ${
-              entry.role !== "" ? `- ${entry.role}` : ""
-            }`}</p>
+            <p className={styles.companyName}>
+              {entry.companyName}
+              {" - "}
+              {entry.role !== "" ? <span>{entry.role}</span> : ""}
+            </p>
             <p>{`${entry.dateFrom !== "" ? `From: ${entry.dateFrom}` : ""}${
               entry.dateTo !== "" ? ` Until: ${entry.dateTo}` : ""
             }`}</p>
