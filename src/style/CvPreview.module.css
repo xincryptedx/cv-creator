@@ -51,6 +51,9 @@
 
   width: 600px;
   aspect-ratio: 8.5 / 11;
+
+  padding-left: 28px;
+  padding-right: 28px;
 }
 
 .basicInfo {
