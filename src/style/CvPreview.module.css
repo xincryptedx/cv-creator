@@ -135,4 +135,9 @@
   .basicInfo h2 {
     margin-top: 0;
   }
+
+  .educationEntry,
+  .workEntry {
+    break-inside: avoid;
+  }
 }
