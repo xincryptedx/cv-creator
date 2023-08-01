@@ -74,7 +74,7 @@
 
 .workEntry p span {
   font-style: italic;
-  display: inline-block;
+  display: inline;
 }
 
 /* Extra small devices (phones, 600px and down) */
