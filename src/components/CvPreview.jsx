@@ -16,9 +16,11 @@ function CvPreview({
       if (type === "education") {
         return (
           <div key={entry.uid} className={styles.educationEntry}>
-            <p>{`${entry.schoolName} ${
-              entry.areaOfStudy !== "" ? `- ${entry.areaOfStudy}` : ""
-            }`}</p>
+            <p className={styles.schoolName}>
+              {entry.schoolName}
+              {" - "}
+              {entry.areaOfStudy !== "" ? <span>{entry.areaOfStudy}</span> : ""}
+            </p>
             <p>{`${entry.dateFrom !== "" ? `From: ${entry.dateFrom}` : ""}${
               entry.dateTo !== "" ? ` Until: ${entry.dateTo}` : ""
             }`}</p>
