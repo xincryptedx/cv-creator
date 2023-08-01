@@ -58,11 +58,9 @@ function CvPreview({
       <div className={styles.cvContainer}>
         <div className={styles.basicInfo}>
           <h2>{`${basicInfo.firstName} ${basicInfo.lastName}`}</h2>
-          {basicInfo.address !== "" ? (
-            <p>{`Address: ${basicInfo.address}`}</p>
-          ) : null}
-          {basicInfo.phone !== "" ? <p>{`Phone: ${basicInfo.phone}`}</p> : null}
-          {basicInfo.email !== "" ? <p>{`Email: ${basicInfo.email}`}</p> : null}
+          {basicInfo.address !== "" ? <p>{basicInfo.address}</p> : null}
+          {basicInfo.phone !== "" ? <p>{basicInfo.phone}</p> : null}
+          {basicInfo.email !== "" ? <p>{basicInfo.email}</p> : null}
         </div>
 
         {basicInfo.summary !== "" ? (
