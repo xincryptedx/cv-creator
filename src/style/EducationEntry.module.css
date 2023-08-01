@@ -9,3 +9,9 @@
   max-width: 150px;
   justify-self: end;
 }
+
+@media print {
+  .educationEntry {
+    break-inside: avoid;
+  }
+}
