@@ -109,9 +109,13 @@
     display: none;
   }
 
+  body {
+    margin: 0.635cm 0.635cm 1.27cm 0.635cm;
+  }
+
   .cvContainer,
   .cvContainer * {
-    display: grid;
+    display: block;
   }
 
   .cvContainer {
@@ -119,5 +123,16 @@
     box-shadow: none;
     height: 100vh;
     width: 100vw;
+    margin: 0;
+    padding: 0;
+    font-size: 12pt;
+  }
+
+  .basicInfo {
+    display: grid;
+  }
+
+  .basicInfo h2 {
+    margin-top: 0;
   }
 }
