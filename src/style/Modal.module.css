@@ -1,14 +1,26 @@
 .modalBackground {
   background-color: hsla(0, 0%, 0%, 50%);
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  height: 100%;
+  height: 100vh;
   width: 100%;
 }
 
 .modal {
+  display: grid;
+
+  height: 100px;
+  width: 200px;
+
   position: fixed;
-  top: 50%;
-  left: 50%;
+  top: calc(50% - 50px);
+  left: calc(50% - 100px);
+
+  background-color: var(--primary_2);
+  border: 2px solid var(--primary_1);
+  border-radius: 5px;
+  color: white;
+
+  padding: 10px;
 }
