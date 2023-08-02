@@ -86,6 +86,11 @@
   display: inline;
 }
 
+.educationEntry p span {
+  font-style: italic;
+  display: inline;
+}
+
 .workEntry p span {
   font-style: italic;
 }
