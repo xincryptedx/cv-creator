@@ -4,8 +4,8 @@ import gitIcon from "../assets/github-mark.svg";
 function AuthorHeader() {
   return (
     <header className={styles.authorHeader}>
-      <p>Created by: xIncryptedx</p>
-      <a>
+      <p className={styles.authorP}>Created by: xIncryptedx</p>
+      <a className={styles.git}>
         <img src={gitIcon} alt="" />
       </a>
     </header>
