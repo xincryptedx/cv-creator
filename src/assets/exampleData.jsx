@@ -10,6 +10,13 @@ const exampleData = {
   },
   educationEntries: [
     {
+      uid: "11111110",
+      schoolName: "TechnoTech Tech",
+      areaOfStudy: "Computer Science",
+      dateFrom: "2022",
+      dateTo: "2024",
+    },
+    {
       uid: "11111111",
       schoolName: "Turing University",
       areaOfStudy: "Computer Science",
