@@ -56,7 +56,8 @@
   min-height: 45px;
 }
 
-.cvForm button:hover {
+.cvForm button:hover,
+.cvForm button:focus {
   background-color: var(--primary_3);
   border-color: var(--primary_1);
 }
