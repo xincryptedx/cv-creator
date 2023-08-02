@@ -62,3 +62,9 @@
   height: 25px;
   width: 25px;
 }
+
+@media print {
+  .authorHeader {
+    display: none;
+  }
+}
