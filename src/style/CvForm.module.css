@@ -32,6 +32,14 @@
   border-radius: 5px;
 }
 
+.cvForm input {
+  min-height: 30px;
+}
+
+.cvForm textarea {
+  min-height: 60px;
+}
+
 .cvForm label {
   color: var(--font_1);
   font-weight: bold;
