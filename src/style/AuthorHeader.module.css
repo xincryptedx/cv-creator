@@ -1,8 +1,8 @@
 .authorHeader {
   display: grid;
   grid-auto-flow: column;
-  grid-template: 1fr / 1fr 1fr 1fr 1fr;
-  grid-template-areas: ". author git .";
+  grid-template: 1fr / 1fr;
+
   align-items: center;
 
   position: fixed;
@@ -15,8 +15,14 @@
   border-bottom: 1px solid #1f1f1f;
   box-shadow: 1px 1px 1px rgb(54, 54, 54);
 
-  min-height: 65px;
   width: 100%;
+}
+
+.authorHeader:hover {
+  grid-template: 1fr / 1fr 1fr 1fr 1fr;
+  grid-template-areas: ". author git .";
+
+  min-height: 65px;
 }
 
 .authorP {
@@ -34,4 +40,10 @@
 .gitIcon {
   height: 40px;
   width: 40px;
+}
+
+.downArrowIcon {
+  justify-self: center;
+  height: 25px;
+  width: 25px;
 }
