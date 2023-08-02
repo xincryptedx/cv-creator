@@ -6,8 +6,20 @@ import { useState } from "react";
 function AuthorHeader() {
   const [open, setOpen] = useState(false);
 
+  const handleHover = () => {
+    setOpen(true);
+  };
+
+  const handleHoverEnd = () => {
+    setOpen(false);
+  };
+
   return (
-    <header className={styles.authorHeader}>
+    <header
+      className={styles.authorHeader}
+      onMouseEnter={handleHover}
+      onMouseLeave={handleHoverEnd}
+    >
       {open === true ? (
         <>
           {" "}
