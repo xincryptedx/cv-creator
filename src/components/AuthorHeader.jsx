@@ -6,7 +6,7 @@ function AuthorHeader() {
     <header className={styles.authorHeader}>
       <p className={styles.authorP}>Created by: xIncryptedx</p>
       <a className={styles.git}>
-        <img src={gitIcon} alt="" />
+        <img className={styles.gitIcon} src={gitIcon} alt="" />
       </a>
     </header>
   );
