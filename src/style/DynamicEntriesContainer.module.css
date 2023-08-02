@@ -5,6 +5,7 @@
 }
 
 .dynamicEntriesContainer section {
+  row-gap: 5px;
   border-style: dotted;
   border-left: none;
   border-right: none;

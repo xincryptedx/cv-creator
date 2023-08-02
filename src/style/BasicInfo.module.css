@@ -1,5 +1,6 @@
 .basicInfoSection {
   display: grid;
+  row-gap: 5px;
 
   background-color: var(--background_2);
 }
