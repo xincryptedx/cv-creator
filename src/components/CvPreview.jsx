@@ -21,9 +21,25 @@ function CvPreview({
               {" - "}
               {entry.areaOfStudy !== "" ? <span>{entry.areaOfStudy}</span> : ""}
             </p>
-            <p>{`${entry.dateFrom !== "" ? `From: ${entry.dateFrom}` : ""}${
-              entry.dateTo !== "" ? ` Until: ${entry.dateTo}` : ""
-            }`}</p>
+            <p>
+              {entry.dateFrom !== "" ? (
+                <>
+                  <span>From: </span>
+                  {entry.dateFrom}
+                </>
+              ) : (
+                ""
+              )}
+              {" - "}
+              {entry.dateTo !== "" ? (
+                <>
+                  <span>Until: </span>
+                  {entry.dateTo}
+                </>
+              ) : (
+                ""
+              )}
+            </p>
           </div>
         );
       } else if (type === "work") {
@@ -34,9 +50,25 @@ function CvPreview({
               {" - "}
               {entry.role !== "" ? <span>{entry.role}</span> : ""}
             </p>
-            <p>{`${entry.dateFrom !== "" ? `From: ${entry.dateFrom}` : ""}${
-              entry.dateTo !== "" ? ` Until: ${entry.dateTo}` : ""
-            }`}</p>
+            <p>
+              {entry.dateFrom !== "" ? (
+                <>
+                  <span>From: </span>
+                  {entry.dateFrom}
+                </>
+              ) : (
+                ""
+              )}
+              {" - "}
+              {entry.dateTo !== "" ? (
+                <>
+                  <span>Until: </span>
+                  {entry.dateTo}
+                </>
+              ) : (
+                ""
+              )}
+            </p>
             {entry.tasks !== "" ? (
               <p>
                 <span>Main Responsibilities: </span>
