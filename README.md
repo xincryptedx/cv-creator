@@ -2,6 +2,8 @@
 
 This project creates a CV application using React.
 
+Project can be viewed live [here](https://cv-creator-git-main-xincryptedx.vercel.app/).
+
 ## Overview
 
 The application allows users to:
