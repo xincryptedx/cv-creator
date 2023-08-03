@@ -45,16 +45,17 @@
   grid-area: git;
   justify-self: start;
   padding-left: 30px;
-  transition: all 0.4s ease-in-out;
-}
-
-.gitHover {
-  transform: rotate(360);
+  transition: opacity 0.4s ease-in-out;
 }
 
 .gitIcon {
   height: 40px;
   width: 40px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gitIconHovering {
+  transform: rotate(360deg);
 }
 
 .downArrowIcon {

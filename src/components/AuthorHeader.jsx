@@ -25,7 +25,15 @@ function AuthorHeader() {
         onMouseEnter={() => setGitHover(true)}
         onMouseLeave={() => setGitHover(false)}
       >
-        <img className={styles.gitIcon} src={gitIcon} alt="🐱" />
+        <img
+          className={
+            gitHover
+              ? styles.gitIconHovering + " " + styles.gitIcon
+              : styles.gitIcon
+          }
+          src={gitIcon}
+          alt="🐱"
+        />
       </a>{" "}
       <img className={styles.downArrowIcon} src={doubleDownArrowIcon}></img>
     </header>
