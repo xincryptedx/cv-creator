@@ -35,7 +35,7 @@ function AuthorHeader() {
               : styles.gitIcon
           }
           src={gitIcon}
-          alt="GitHub logo"
+          alt="Project GitHub repo"
         />
       </a>{" "}
       <img
