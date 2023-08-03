@@ -27,10 +27,6 @@
   transform: translateY(0px);
 }
 
-.headerHovering .downArrowIcon {
-  opacity: 0;
-}
-
 .authorHeader:hover .authorP,
 .authorHeader:hover .git {
   opacity: 1;
@@ -49,7 +45,11 @@
   grid-area: git;
   justify-self: start;
   padding-left: 30px;
-  transition: opacity 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.gitHover {
+  transform: rotate(360);
 }
 
 .gitIcon {
@@ -64,6 +64,10 @@
   height: 26px;
   width: 26px;
   transition: opacity 0.2s ease-in-out;
+}
+
+.headerHovering .downArrowIcon {
+  opacity: 0;
 }
 
 @media print {
