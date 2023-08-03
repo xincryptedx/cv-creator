@@ -24,7 +24,7 @@
 .authorHeader:hover {
   grid-template: 1fr / 1fr 10% 10% 1fr;
   grid-template-areas: ". author git .";
-  min-height: 65px;
+  height: 70px;
 }
 
 .authorHeader:hover .downArrowIcon {
