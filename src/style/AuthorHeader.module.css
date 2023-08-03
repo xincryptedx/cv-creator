@@ -21,6 +21,7 @@
 
   transform: translateY(-30px);
   transition: transform 0.3s ease-in-out;
+  perspective: 500px;
 }
 
 .headerHovering {
@@ -51,11 +52,11 @@
 .gitIcon {
   height: 40px;
   width: 40px;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.5s linear;
 }
 
 .gitIconHovering {
-  transform: rotate(360deg);
+  transform: rotate3d(0, 1, 0, -360deg);
 }
 
 .downArrowIcon {
