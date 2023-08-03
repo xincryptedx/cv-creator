@@ -28,8 +28,8 @@
   transform: translateY(0px);
 }
 
-.authorHeader:hover .authorP,
-.authorHeader:hover .git {
+.headerHovering .authorP,
+.headerHovering .git {
   opacity: 1;
 }
 

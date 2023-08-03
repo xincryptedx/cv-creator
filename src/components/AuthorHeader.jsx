@@ -24,6 +24,8 @@ function AuthorHeader() {
         href="https://github.com/xincryptedx/cv-creator"
         onMouseEnter={() => setGitHover(true)}
         onMouseLeave={() => setGitHover(false)}
+        onFocus={() => setHeaderHover(true)}
+        onBlur={() => setHeaderHover(false)}
       >
         <img
           className={
