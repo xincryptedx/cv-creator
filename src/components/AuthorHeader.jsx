@@ -26,6 +26,7 @@ function AuthorHeader() {
         onMouseLeave={() => setGitHover(false)}
         onFocus={() => setHeaderHover(true)}
         onBlur={() => setHeaderHover(false)}
+        onClick={() => setHeaderHover((previous) => !previous)}
       >
         <img
           className={
