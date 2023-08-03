@@ -21,6 +21,9 @@
   width: 100%;
 }
 
+.headerHovering {
+}
+
 .authorHeader:hover {
   grid-template: 1fr / 1fr 10% 10% 1fr;
   grid-template-areas: ". author git .";

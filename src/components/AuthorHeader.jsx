@@ -15,20 +15,22 @@ function AuthorHeader() {
   };
 
   return (
-    <header className={styles.authorHeader}>
+    <header
+      className={
+        hovering
+          ? styles.headerHovering + " " + styles.authorHeader
+          : styles.authorHeader
+      }
+      onMouseEnter={handleHover}
+      onMouseLeave={handleHoverEnd}
+    >
       {" "}
       <p className={styles.authorP}>{hovering ? "GitHub" : "xIncryptedx"}</p>
       <a
         className={styles.git}
         href="https://github.com/xincryptedx/cv-creator"
       >
-        <img
-          className={styles.gitIcon}
-          src={gitIcon}
-          alt="🐱"
-          onMouseEnter={handleHover}
-          onMouseLeave={handleHoverEnd}
-        />
+        <img className={styles.gitIcon} src={gitIcon} alt="🐱" />
       </a>{" "}
       <img className={styles.downArrowIcon} src={doubleDownArrowIcon}></img>
     </header>
