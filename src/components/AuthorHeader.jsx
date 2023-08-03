@@ -4,31 +4,26 @@ import doubleDownArrowIcon from "../assets/double-arrow-down.svg";
 import { useState } from "react";
 
 function AuthorHeader() {
-  const [hovering, setHovering] = useState(false);
-
-  const handleHover = () => {
-    setHovering(true);
-  };
-
-  const handleHoverEnd = () => {
-    setHovering(false);
-  };
+  const [headerHover, setHeaderHover] = useState(false);
+  const [gitHover, setGitHover] = useState(false);
 
   return (
     <header
       className={
-        hovering
+        headerHover
           ? styles.headerHovering + " " + styles.authorHeader
           : styles.authorHeader
       }
-      onMouseEnter={handleHover}
-      onMouseLeave={handleHoverEnd}
+      onMouseEnter={() => setHeaderHover(true)}
+      onMouseLeave={() => setHeaderHover(false)}
     >
       {" "}
-      <p className={styles.authorP}>{hovering ? "GitHub" : "xIncryptedx"}</p>
+      <p className={styles.authorP}>{gitHover ? "GitHub" : "xIncryptedx"}</p>
       <a
         className={styles.git}
         href="https://github.com/xincryptedx/cv-creator"
+        onMouseEnter={() => setGitHover(true)}
+        onMouseLeave={() => setGitHover(false)}
       >
         <img className={styles.gitIcon} src={gitIcon} alt="🐱" />
       </a>{" "}
