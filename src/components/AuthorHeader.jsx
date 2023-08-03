@@ -34,10 +34,14 @@ function AuthorHeader() {
               : styles.gitIcon
           }
           src={gitIcon}
-          alt="🐱"
+          alt="GitHub logo"
         />
       </a>{" "}
-      <img className={styles.downArrowIcon} src={doubleDownArrowIcon}></img>
+      <img
+        className={styles.downArrowIcon}
+        src={doubleDownArrowIcon}
+        alt=""
+      ></img>
     </header>
   );
 }
