@@ -16,6 +16,7 @@ function AuthorHeader() {
       }
       onMouseEnter={() => setHeaderHover(true)}
       onMouseLeave={() => setHeaderHover(false)}
+      onTouchEnd={() => setHeaderHover((previous) => !previous)}
     >
       {" "}
       <p className={styles.authorP}>{gitHover ? "GitHub" : "xIncryptedx"}</p>
@@ -26,7 +27,6 @@ function AuthorHeader() {
         onMouseLeave={() => setGitHover(false)}
         onFocus={() => setHeaderHover(true)}
         onBlur={() => setHeaderHover(false)}
-        onTouchEnd={() => setHeaderHover((previous) => !previous)}
       >
         <img
           className={
